@@ -1,0 +1,58 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTENEDOR DE CADA SECCIÓN */
+.slide {
+    width: 100vw;
+}
+
+/* IMAGEN RESPONSIVE */
+.slide img {
+      width: 100%;
+    height: auto;  /* respeta la altura real */
+    display: block;
+}
+
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+    z-index: 1000; /* siempre encima de las imágenes */
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background: white;
+    color: black;
+}
+
+.menu img {
+    width: 40px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
